@@ -2,6 +2,7 @@
   "name": "",
   "type": "module",
   "version": "0.0.1",
+  "description": "It's a dream project of Ahsan Niloy. Goal is to help businesses achieve there true potential by digital marketing.",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -9,6 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.17.1"
+    "@astrojs/react": "^4.4.2",
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/react": "^19.2.11",
+    "@types/react-dom": "^19.2.3",
+    "astro": "^5.17.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwindcss": "^4.1.18"
   }
 }
