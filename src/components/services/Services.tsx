@@ -261,12 +261,12 @@ export default function Services() {
   }, []);
 
   return (
-    <section id="services" className="bg-white w-full py-24">
+    <section id="services" className="bg-white w-full py-8">
       <div className="max-w-7xl mx-auto px-4 flex flex-col">
         {/* --- NEW HEADER SECTION --- */}
         <div
           ref={headerRef}
-          className="flex flex-col items-center text-center mb-8 gap-4"
+          className="flex flex-col items-center text-center mb-6 gap-4"
         >
           <h2 className="text-5xl md:text-4xl font-bold tracking-tighter text-zinc-900">
             Our Expertise.
