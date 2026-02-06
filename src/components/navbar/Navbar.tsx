@@ -139,7 +139,7 @@ export default function Navbar() {
             <div ref={ctaRef} className="flex items-center gap-3">
               <div className="hidden md:block">
                 <Button variant="outline" className="!py-2 !px-4 text-sm">
-                  Contact
+                  Contact Us
                 </Button>
               </div>
               <Button
