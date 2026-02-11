@@ -75,12 +75,12 @@ export default function WhyUs() {
     <section
       ref={containerRef}
       id="why-us"
-      className="w-full bg-[#F5F2EB] py-32 px-4"
+      className="w-full bg-accent-2 py-32 px-4"
     >
       <div className="max-w-7xl mx-auto flex flex-col gap-16">
         {/* HEADER SECTION */}
         <div className="why-us-header flex flex-col items-center text-center gap-6 max-w-4xl mx-auto">
-          <span className="text-xs font-bold tracking-widest text-zinc-500 uppercase">
+          <span className="text-xs font-bold tracking-widest text-primary uppercase">
             Made to Create
           </span>
           <h2 className="text-4xl md:text-5xl font-medium text-zinc-900 leading-tight">

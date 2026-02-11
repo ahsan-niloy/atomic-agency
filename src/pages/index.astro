@@ -3,13 +3,17 @@
 import Navbar from '../components/navbar/Navbar';
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/header/Hero.tsx';
-import TrustedBrands from '../components/Trusted Brands/TrustedBrand.tsx';
+import TrustedBrands from '../components/trusted Brands/TrustedBrand.tsx';
 import Services from '../components/services/Services.tsx';
 import OurWork from '../components/our work/OurWork.tsx';
 import WhyUs from '../components/why us/WhyUs.tsx';
 import MagicTouch from '../components/promo video/MagicTouch.tsx';
-import BoostSection from '../components/services/BoostSection.tsx';
+import BoostSection from '../components/why us/BoostSection.tsx';
 import Comparison from '../components/compare/Comparison.tsx';
+import Testimonials from '../components/trusted Brands/Testimonials';
+import BentoGrid from '../components/why us/BentoGrid.tsx';
+import NextGenCreativity from '../components/why us/NextGenCreativity.tsx';
+import Footer from '../components/footer/Footer.tsx';
 
 
 ---
@@ -24,4 +28,8 @@ import Comparison from '../components/compare/Comparison.tsx';
 <MagicTouch client:visible={{ rootMargin: "200px" }} />
 <BoostSection client:visible={{ rootMargin: "300px" }} />
 <Comparison client:visible={{ rootMargin: "200px" }} />
+<Testimonials client:visible={{ rootMargin: "200px" }} />
+<BentoGrid client:visible={{ rootMargin: "200px" }} />
+<NextGenCreativity client:visible={{ rootMargin: "200px" }} />
+<Footer client:visible/>
 </Layout>

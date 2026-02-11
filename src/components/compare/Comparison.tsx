@@ -31,12 +31,12 @@ export default function Comparison() {
   return (
     <section
       ref={containerRef}
-      className="w-full bg-[#130803] py-32 px-4 overflow-hidden"
+      className="w-full bg-accent py-32 px-4 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto flex flex-col gap-12">
         {/* HEADER */}
         <div className="text-center space-y-4">
-          <span className="text-xs font-bold tracking-[0.2em] text-white/60 uppercase">
+          <span className="text-xs font-bold tracking-[0.2em] text-primary uppercase">
             Atomic Agency vs Other Options
           </span>
           <h2 className="text-4xl md:text-5xl font-medium text-white">
@@ -50,10 +50,7 @@ export default function Comparison() {
             {/* TABLE HEADERS */}
             <thead>
               <tr>
-                {/* Sticky Corner:
-                   - Mobile: min-w-[150px]
-                   - Desktop: w-[300px]
-                */}
+                {/* Sticky Corner */}
                 <th className="p-4 md:p-6 min-w-[150px] md:w-[300px] sticky left-0 z-20 bg-[#130803]"></th>
 
                 <th className="p-4 md:p-6 text-white font-medium text-sm md:text-lg whitespace-nowrap">
@@ -79,10 +76,17 @@ export default function Comparison() {
                 {/* LEFT STICKY CELL */}
                 <td className="p-0 sticky left-0 z-20 drop-shadow-2xl">
                   <div className="bg-[#FF713D] h-full rounded-l-2xl md:rounded-l-3xl p-4 md:p-8 flex flex-col justify-center gap-2 border-r border-white/10 min-h-[160px]">
-                    <div className="h-6 md:h-8 mb-1">
-                      <img src={atomicLogo} alt="Atomic Logo" />
+                    {/* LOGO FIX START */}
+                    <div className="mb-1 h-6 md:h-8 flex items-center">
+                      <img
+                        src={atomicLogo}
+                        alt="Atomic Logo"
+                        // FIX: 'h-full' sets size, 'brightness-0 invert' forces it to be WHITE
+                        className="h-full w-auto object-contain brightness-0 invert"
+                      />
                     </div>
-                    {/* Hide description on tiny screens to save space */}
+                    {/* LOGO FIX END */}
+
                     <p className="text-white/90 text-xs md:text-sm leading-snug max-w-[200px] hidden md:block">
                       Some of the reasons clients choose us over conventional
                       solutions.
@@ -111,10 +115,6 @@ export default function Comparison() {
               -------------------------------------------- */}
               <tr className="comparison-row border-b border-white/5 last:border-0">
                 <td className="p-0 sticky left-0 z-10 bg-[#130803]">
-                  {/* LAYOUT CHANGE: 
-                      - flex-col (Mobile): Stacks Icon on top of Text
-                      - md:flex-row (Desktop): Side-by-side
-                  */}
                   <div className="p-4 md:p-8 flex flex-col md:flex-row items-start md:items-center gap-3 md:gap-4 min-w-[150px] md:min-w-[300px]">
                     <IconBox icon="building" />
                     <div>

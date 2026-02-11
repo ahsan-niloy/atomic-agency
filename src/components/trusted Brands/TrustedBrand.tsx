@@ -8,7 +8,7 @@ import Blushwork from "../../assets/Blushwork.png?url";
 import DoubleG from "../../assets/DoubleG.png?url";
 import Figma from "../../assets/Figma.png?url";
 import Fiverr from "../../assets/fiverr.png?url";
-import Group19 from "../../assets/Group 19.png?url";
+import Group19 from "../../assets/SiteGuardian.png?url";
 import Knok from "../../assets/Knok.png?url";
 import Legacy from "../../assets/Legacy.png?url";
 import LuxeStudios from "../../assets/LuxeStudios.png?url";
